@@ -29,9 +29,9 @@ jobs:
           sudo apt-get install -y --no-install-recommends openscad
           openscad ./Designs/d6-basic.scad -o ./generated/d6-basic.stl
           ls ./generated
-          - name: Create Pull Request
-
-      - uses: peter-evans/create-pull-request@v3
+          
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Generate STL CAD
