@@ -6,11 +6,11 @@ module CreateDice(size = 16) {
     textExtrusionSize = 2;
     difference() {
         cube([size, size, size], center = true);
-        translate([0,0,textLocation]) linear_extrude(textExtrusionSize) text("a", size=textSize, halign="center", valign="center");
-        rotate([180, 0, 0]) translate([0,0,textLocation]) linear_extrude(textExtrusionSize) text("b", size=textSize, halign="center", valign="center");
-        rotate([0, 90, 0]) translate([0,0,textLocation]) linear_extrude(textExtrusionSize) text("c", size=textSize, halign="center", valign="center");
-        rotate([0, 270, 0]) translate([0,0,textLocation]) linear_extrude(textExtrusionSize) text("d", size=textSize, halign="center", valign="center");
-        rotate([90, 0, 0]) translate([0,0,textLocation]) linear_extrude(textExtrusionSize) text("e", size=textSize, halign="center", valign="center");
-        rotate([270, 0, 0]) translate([0,0,textLocation]) linear_extrude(textExtrusionSize) text("f", size=textSize, halign="center", valign="center");
+        translate([0,0,textLocation]) linear_extrude(textExtrusionSize) text("1", size=textSize, halign="center", valign="center");
+        rotate([180, 0, 0]) translate([0,0,textLocation]) linear_extrude(textExtrusionSize) text("6", size=textSize, halign="center", valign="center");
+        rotate([0, 90, 0]) translate([0,0,textLocation]) linear_extrude(textExtrusionSize) text("5", size=textSize, halign="center", valign="center");
+        rotate([0, 270, 0]) translate([0,0,textLocation]) linear_extrude(textExtrusionSize) text("2", size=textSize, halign="center", valign="center");
+        rotate([90, 0, 0]) translate([0,0,textLocation]) linear_extrude(textExtrusionSize) text("3", size=textSize, halign="center", valign="center");
+        rotate([270, 0, 0]) translate([0,0,textLocation]) linear_extrude(textExtrusionSize) text("4", size=textSize, halign="center", valign="center");
     }
 }
