@@ -1,4 +1,4 @@
 difference() {
-  cube([10,10,10], center=true);
-  sphere(12);
+    cube([10,10,10], center=true);
+    sphere(d=12);
 }
